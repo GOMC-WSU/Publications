@@ -1,0 +1,7 @@
+temp_K,temp_std_K,P_bar_mean,P_bar_std,molecule_name,ads_molecules_per_UC_mean,ads_molecules_per_UC_std
+298,None,0.0524116384,None,CO2,0.1374219735,None
+298,None,0.1046475298,None,CO2,0.474841996794905,None
+298,None,0.2081429408,None,CO2,1.05765840133981,None
+298,None,0.3121265378,None,CO2,1.67114935384891,None
+298,None,0.5488966999,None,CO2,2.95948035356372,None
+298,None,0.7983596954,None,CO2,4.33983499593933,None

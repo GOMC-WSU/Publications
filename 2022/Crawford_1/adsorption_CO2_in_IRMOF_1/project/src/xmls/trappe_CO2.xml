@@ -1,0 +1,17 @@
+<ForceField version="0.0.1" name="TraPPE CO2 bond and angle K constants are a placeholder as they are fixed with 999999999999999 in GOMC" >
+ <AtomTypes>
+   <Type name="OC" class="OC" element="O" mass="15.9994" def="[O;X1][C;X2](O)" desc="O in CO2 " doi="10.1002/aic.690470719" />
+   <Type name="CO" class="CO" element="C" mass="12.0110" def="[C;X2](O)(O)" desc="C in CO2P" doi="10.1002/aic.690470719" />
+ </AtomTypes>
+ <HarmonicBondForce>
+   <Bond class1="CO" class2="OC" length="0.116" k="376560"/>
+ </HarmonicBondForce>
+ <HarmonicAngleForce>
+   <Angle class1="OC" class2="CO" class3="OC" angle="3.14159265358979" k="460.24"/>
+ </HarmonicAngleForce>
+ <NonbondedForce coulomb14scale="0" lj14scale="0">
+   <!-- https://github.com/gromacs/gromacs/blob/master/share/top/oplsaa.ff/spce.itp -->
+  <Atom type="OC" charge="-0.35" sigma="0.305" epsilon="0.656842546834103"/>
+  <Atom type="CO" charge="0.70" sigma="0.28" epsilon="0.224490490690136"/>
+ </NonbondedForce>
+</ForceField>

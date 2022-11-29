@@ -1,0 +1,22 @@
+name: 2022_crawford_1
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python=3.9
+  - alchemlyb 
+  - freud
+  - matplotlib
+  - mosdef-gomc=1.0.0
+  - sympy=1.10 
+  - garnett 
+  - gsd 
+  - pycifrw
+  - scipy
+  - numpy
+  - pandas
+  - pymbar
+  - signac
+  - signac-dashboard
+  - signac-flow
+

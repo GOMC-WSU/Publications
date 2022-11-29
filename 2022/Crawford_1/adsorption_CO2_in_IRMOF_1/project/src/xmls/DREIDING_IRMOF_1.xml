@@ -1,0 +1,24 @@
+<ForceField version="0.0.1" name="DREIDING_IRMOF_1" >
+ <AtomTypes>
+  <Type name="C1_zeo" class="C1" element="_C1" mass="12.0110" def="_C1" desc="C1 - DREIDING zeo" doi="10.1021/j100389a010 and 10.1021/ja9057234"/>
+  <Type name="C2_zeo" class="C2" element="_C2" mass="12.0110" def="_C2" desc="C2 - DREIDING zeo" doi="10.1021/j100389a010 and 10.1021/ja9057234"/>
+  <Type name="C3_zeo" class="C3" element="_C3" mass="12.0110" def="_C3" desc="C3 - DREIDING zeo" doi="10.1021/j100389a010 and 10.1021/ja9057234"/>
+  <Type name="H3_zeo" class="H3" element="_H3" mass="1.0079" def="_H3" desc="H3 - DREIDING zeo" doi="10.1021/j100389a010 and 10.1021/ja9057234"/>
+  <Type name="ZN1_zeo" class="ZN1" element="_ZN1" mass="65.3800" def="_ZN1" desc="ZN1 - DREIDINGE zeo" doi="10.1021/j100389a010 and 10.1021/ja9057234"/>
+  <Type name="O1_zeo" class="O1" element="_O1" mass="15.9994" def="_O1" desc="O1 - DREIDING zeo" doi="10.1021/j100389a010 and 10.1021/ja9057234"/>
+  <Type name="O2_zeo" class="O2" element="_O2" mass="15.9994" def="_O2" desc="O2 - DREIDING zeo" doi="10.1021/j100389a010 and 10.1021/ja9057234"/>
+ </AtomTypes>
+ <HarmonicBondForce>
+ </HarmonicBondForce>
+ <HarmonicAngleForce>
+ </HarmonicAngleForce>
+ <NonbondedForce coulomb14scale="0.0" lj14scale="0.0">
+  <Atom type="C1_zeo" charge="0.558" sigma="0.3473" epsilon="0.39789692305434"/>
+  <Atom type="C2_zeo" charge="0.106" sigma="0.3473" epsilon="0.39789692305434"/>
+  <Atom type="C3_zeo" charge="-0.167" sigma="0.3473" epsilon="0.39789692305434"/>
+  <Atom type="H3_zeo" charge="0.162" sigma="0.2846" epsilon="0.0635973245662538"/>
+  <Atom type="ZN1_zeo" charge="1.333" sigma="0.4045" epsilon="0.230119381882626"/>
+  <Atom type="O1_zeo" charge="-1.564" sigma="0.3033" epsilon="0.400407890765022"/>
+  <Atom type="O2_zeo" charge="-0.641" sigma="0.3033" epsilon="0.400407890765022"/>
+ </NonbondedForce>
+</ForceField>
