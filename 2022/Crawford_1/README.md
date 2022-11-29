@@ -18,20 +18,22 @@ These signac workflows are designed to automate user workflows for the MoSDeF-GO
 
 ### Citation
 
-Please cite this GitHub repository, the MoSDeF-GOMC and signac software. 
+Please cite this GitHub repository, the MoSDeF-GOMC and signac software.
 
  - This repository:  Crawford, B.; Potoff, J. signac workflows for MoSDeF-GOMC. 2022; https://github.com/GOMC-WSU/Publications/tree/main/2022/Crawford_1
  - MoSDeF-GOMC, GOMC, and MoSDeF tools, which are provided [here](https://mosdef-gomc.readthedocs.io/en/latest/reference/citing_mosdef_gomc_python.html)
  - The signac citations are provided [here](https://docs.signac.io/en/latest/acknowledge.html)
- 
+
  ### Installation
 
 These signac workflows for MoSDeF-GOMC can be built using conda:
+
 `conda env create -f environment.yml`
+
 `conda activate 2022_crawford_1`
 
  ### Running all the simulations in a given project:
   -  `cd xxxx` (go to the directory with the init.py and project.py files)
-  -   `python init.py init` (build all the state points)
-  -   `python project.py run ` (run all the jobs on a local computer in which you are the administrator)
-  -   `python project.py run ` (submit available all the jobs to an HPC.  Note: this is currently setup for only Wayne State Grid HPC.  Changes will need to be made to the template/grid.sh file if using a different HPC)
+  -  `python init.py init` (build all the state points)
+  -  `python project.py run ` (run all the jobs on a local computer in which you are the administrator)
+  -  `python project.py submit ` (submit all the available jobs to an HPC.  Note: this is currently setup for only Wayne State Grid HPC.  Changes will need to be made to the template/grid.sh file if using a different HPC or if a different conda environment name is used...)
