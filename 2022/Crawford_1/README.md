@@ -37,3 +37,12 @@ These signac workflows for MoSDeF-GOMC can be built using conda:
   -  `python init.py init` (build all the state points)
   -  `python project.py run ` (run all the jobs on a local computer in which you are the administrator)
   -  `python project.py submit ` (submit all the available jobs to an HPC.  Note: this is currently setup for only Wayne State Grid HPC.  Changes will need to be made to the template/grid.sh file if using a different HPC or if a different conda environment name is used...)
+
+
+ ### Some core python package versions compatible with this workflow.  
+ #### Note: Other versions may not be compatible.
+   - MoSDeF-GOMC:       1.0.0
+   - signac:            1.7.0
+   - signac-dashboard:  0.3.0
+   - signac-flow:       0.20.0
+   
