@@ -44,4 +44,4 @@ These signac workflows for MoSDeF-GOMC can be built using conda:
    - MoSDeF-GOMC:       1.0.0
    - signac:            1.7.0
    - signac-dashboard:  0.3.0
-   - signac-flow:       0.23.0
+   - signac-flow:       0.20.0

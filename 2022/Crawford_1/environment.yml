@@ -18,5 +18,5 @@ dependencies:
   - pymbar
   - signac=1.7.0
   - signac-flow=0.3.0
-  - signac-dashboard=0.23.0
+  - signac-dashboard=0.20.0
 
