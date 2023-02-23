@@ -42,6 +42,6 @@ These signac workflows for MoSDeF-GOMC can be built using conda:
  ### Some core python package versions compatible with this workflow.  
  ### Note: Other versions may not be compatible.
    - MoSDeF-GOMC:       1.0.0
-   - signac:                       1.7.0
-   - signac-dashboard:     0.3.0
-   - signac-flow:               0.23.0
+   - signac:            1.7.0
+   - signac-dashboard:  0.3.0
+   - signac-flow:       0.23.0
