@@ -6,6 +6,12 @@
 ### Overview
 These signac workflows are designed to automate user workflows for the MoSDeF-GOMC software. The examples contain S8 jet fuel surrogate vapor-liquid equilibrium, neon and radon free energies of hydration in water, and CO2 adsorption in the IRMOF-1.
 
+### IMPORTANT NOTE
+In all the project.py files, the user will need to modify the **gomc_binary_path** and/or **namd_binary_path** variables to match the local system's paths for GOMC and NAMD.  The project.py files are located in the following places for each of the projects:
+ - [adsorption_CO2_in_IRMOF_1/project/project.py](https://github.com/GOMC-WSU/Publications/tree/main/2023/Crawford_1/adsorption_CO2_in_IRMOF_1/project)
+ - [noble_gas_free_energies/project/project.py](https://github.com/GOMC-WSU/Publications/tree/main/2023/Crawford_1/noble_gas_free_energies/project)
+ - [S8_vapor_liquid_equilibrium/project/project.py](https://github.com/GOMC-WSU/Publications/tree/main/2023/Crawford_1/S8_vapor_liquid_equilibrium/project)
+
 ### Resources
  - [MoSDeF-GOMC Github repository](https://github.com/GOMC-WSU/MoSDeF-GOMC)
  - [MoSDeF-GOMC tutorials and examples](https://github.com/GOMC-WSU/GOMC_Examples/tree/main/MoSDef-GOMC) with [MoSDeF-GOMC YouTube videos](https://www.youtube.com/watch?v=7StVoUCGkHs&list=PLdxD0z6HRx8Y9VhwcODxAHNQBBJDRvxMf)
@@ -20,7 +26,7 @@ These signac workflows are designed to automate user workflows for the MoSDeF-GO
 
 Please cite this GitHub repository, the MoSDeF-GOMC and signac software.
 
- - This repository:  Crawford, B.; Potoff, J. signac workflows for MoSDeF-GOMC. 2022; https://github.com/GOMC-WSU/Publications/tree/main/2022/Crawford_1
+This repository:  Crawford, B.; Potoff, J. signac workflows for MoSDeF-GOMC. 2022; https://github.com/GOMC-WSU/Publications/tree/main/2022/Crawford_1
  - MoSDeF-GOMC, GOMC, and MoSDeF tools, which are provided [here](https://mosdef-gomc.readthedocs.io/en/latest/reference/citing_mosdef_gomc_python.html)
  - The signac citations are provided [here](https://docs.signac.io/en/latest/acknowledge.html)
 
