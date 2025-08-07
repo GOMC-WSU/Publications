@@ -1,0 +1,42 @@
+"""Initialize signac statepoints."""
+
+import os
+import numpy as np
+import signac
+import unyt as u
+
+# *******************************************
+# the main user varying state points (start)
+# *******************************************
+project=signac.get_project()
+production_temperatures = [ 292, 290, 285, 280, 275, 270]*u.K
+production_pressures = [1.0]*u.bar
+
+# To run a single replica, set replicas = [0]
+replicas = [0,1,2,3]
+
+# *******************************************
+# the main user varying state points (end)
+# *******************************************
+
+
+print("os.getcwd() = " +str(os.getcwd()))
+
+pr_root = os.getcwd()
+pr = signac.get_project(pr_root)
+
+# filter the list of dictionaries
+total_statepoints = list()
+for prod_press_i in production_pressures:
+    for prod_temp_i in production_temperatures:
+        for replica_i in replicas:
+            statepoint = {
+                    "production_temperature_K": prod_temp_i.to_value("K"), "production_pressure_bar":prod_press_i.to_value("bar"),
+                "replica_number_int": replica_i,
+            }
+            total_statepoints.append(statepoint)
+
+for sp in total_statepoints:
+    pr.open_job(
+        statepoint=sp,
+    ).init()
